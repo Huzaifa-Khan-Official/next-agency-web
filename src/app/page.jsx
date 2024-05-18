@@ -1,13 +1,11 @@
+import HomeComponent from "./Components/Home/HomeComponent";
 import NavbarComponent from "./Components/Navbar/NavbarComponent";
 
 export default function Home() {
   return (
-    <div>
+    <div className="dark text-foreground bg-background">
       <NavbarComponent />
-      <div className="px-3 py-2">
-        <h1>Welcome</h1>
-        <h3>To my website</h3>
-      </div>
+      <HomeComponent />
     </div>
   );
 }

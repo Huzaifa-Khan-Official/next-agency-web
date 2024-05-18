@@ -12,11 +12,11 @@ export default function NavbarComponent() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} className="dark text-foreground bg-background pt-2" height={4}>
+    <Navbar onMenuOpenChange={setIsMenuOpen} className="border-b-2 pt-2" height={4}>
       <NavbarContent className="ps-0">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
+          className="h-[30px] sm:hidden"
         />
         <NavbarBrand>
           <p className="font-bold text-inherit mb-0">ACME</p>
