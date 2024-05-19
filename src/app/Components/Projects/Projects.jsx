@@ -1,64 +1,99 @@
 "use client"
 import Image from 'next/image';
 import firstWebsite from '../../assets/projects/firstWebsite.jpeg'
+import secondWebsite from '../../assets/projects/secondWebsite.jpeg'
+import thirdWebsite from '../../assets/projects/thirdWebsite.jpeg'
+import fourthWebsite from '../../assets/projects/fourthWebsite.jpeg'
 import { motion } from 'framer-motion';
 export default function Projects() {
+    const variants = {
+        initial: { opacity: 0, translateY: "-50%" },
+        animate: { opacity: 1, translateY: "-100%" },
+    }
     return (
         <div className='grid xs:grid-cols-2 gap-4 p-3'>
-            <motion.div className='relative group'>
+            <motion.div
+                whileHover="animate"
+                initial="initial"
+                animate="initial"
+                transition={{ duration: 1 }}
+                className='relative'
+            >
                 <Image
                     src={firstWebsite}
                     className='fill w-full h-[250px] sm:h-[300px]'
                 />
                 <motion.div
-                    className="cardBody absolute "
-                    initial={{ opacity: 0, translateY: "50px" }}
-                    whileHover={{ opacity: 1, translateY: 0 }}
-                    transition={{ duration: 1 }}
+                    className="cardBody absolute bg-[#000000b0] p-2 w-full"
+                    variants={variants}
                 >
-                    <h1>Hello</h1>
+                    <h1>Project 1</h1>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, doloribus!
+                    </p>
                 </motion.div>
             </motion.div>
-            <motion.div className='relative group'>
+            <motion.div
+                whileHover="animate"
+                initial="initial"
+                animate="initial"
+                transition={{ duration: 1 }}
+                className='relative'
+            >
                 <Image
-                    src={firstWebsite}
+                    src={secondWebsite}
                     className='fill w-full h-[250px] sm:h-[300px]'
                 />
                 <motion.div
-                    className="cardBody absolute "
-                    initial={{ opacity: 0, translateY: "50px" }}
-                    whileHover={{ opacity: 1, translateY: 0 }}
-                    transition={{ duration: 1 }}
+                    className="cardBody absolute bg-[#000000b0] p-2 w-full"
+                    variants={variants}
                 >
-                    <h1>Hello</h1>
+                    <h1>Project 2</h1>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, doloribus!
+                    </p>
                 </motion.div>
             </motion.div>
-            <motion.div className='relative group'>
+            <motion.div
+                whileHover="animate"
+                initial="initial"
+                animate="initial"
+                transition={{ duration: 1 }}
+                className='relative'
+            >
                 <Image
-                    src={firstWebsite}
+                    src={thirdWebsite}
                     className='fill w-full h-[250px] sm:h-[300px]'
                 />
                 <motion.div
-                    className="cardBody absolute "
-                    initial={{ opacity: 0, translateY: "50px" }}
-                    whileHover={{ opacity: 1, translateY: 0 }}
-                    transition={{ duration: 1 }}
+                    className="cardBody absolute bg-[#000000b0] p-2 w-full"
+                    variants={variants}
                 >
-                    <h1>Hello</h1>
+                    <h1>Project 3</h1>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, doloribus!
+                    </p>
                 </motion.div>
             </motion.div>
-            <motion.div className='relative group'>
+            <motion.div
+                whileHover="animate"
+                initial="initial"
+                animate="initial"
+                transition={{ duration: 1 }}
+                className='relative'
+            >
                 <Image
-                    src={firstWebsite}
+                    src={fourthWebsite}
                     className='fill w-full h-[250px] sm:h-[300px]'
                 />
                 <motion.div
-                    className="cardBody absolute "
-                    initial={{ opacity: 0, translateY: "50px" }}
-                    whileHover={{ opacity: 1, translateY: 0 }}
-                    transition={{ duration: 1 }}
+                    className="cardBody absolute bg-[#000000b0] p-2 w-full"
+                    variants={variants}
                 >
-                    <h1>Hello</h1>
+                    <h1>Project 4</h1>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, doloribus!
+                    </p>
                 </motion.div>
             </motion.div>
         </div>
