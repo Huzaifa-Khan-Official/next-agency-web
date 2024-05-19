@@ -4,7 +4,7 @@ import Projects from "./Components/Projects/Projects";
 
 export default function Home() {
   return (
-    <div className="dark text-foreground bg-background">
+    <div className="dark text-foreground bg-background pb-[100px]">
       <NavbarComponent />
       <HomeComponent />
       <Projects />
