@@ -1,16 +1,32 @@
+"use client"
 import React from "react";
+import { motion } from "framer-motion";
 
 const Service = () => {
     return (
-        <section className="pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
+        <section className="py-[50px] my-12 px-2 dark:bg-dark border-y-3">
             <div className="container mx-auto">
                 <div className="-mx-4 flex flex-wrap">
                     <div className="w-full px-4">
                         <div className="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
-                            <h2 class="mb-4 text-3xl font-bold">Our Services</h2>
-                            <p className="text-base text-body-color dark:text-dark-6">
+                            <motion.h2
+                                class="mb-4 text-3xl font-bold"
+                                initial={{ opacity: 0, scale: 0 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 1 }}
+                            >
+                                Our Services
+                            </motion.h2>
+                            <motion.p
+                                className="text-base text-body-color dark:text-dark-6"
+                                initial={{ opacity: 0, scale: 0 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 1 }}
+                            >
                                 What We Offer
-                            </p>
+                            </motion.p>
                         </div>
                     </div>
                 </div>

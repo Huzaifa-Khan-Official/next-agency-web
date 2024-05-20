@@ -1,10 +1,18 @@
+"use client"
 import React from 'react'
+import { motion } from 'framer-motion'
 
 export default function Testimonials() {
     return (
         <div class="container my-24 mx-auto md:px-6">
             <section class="mb-32 text-center">
-                <h2 class="mb-12 text-3xl font-bold">Testimonials</h2>
+                <motion.h2
+                    class="mb-12 text-3xl font-bold"
+                    initial={{ opacity: 0, scale: 0 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1 }}
+                >Testimonials</motion.h2>
 
                 <div class="grid gap-x-6 md:grid-cols-3 xl:gap-x-12">
                     <div class="mb-6 lg:mb-0">
