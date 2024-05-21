@@ -16,8 +16,13 @@ export default function Testimonials() {
 
                 <div class="grid gap-x-6 md:grid-cols-3 xl:gap-x-12">
                     <div class="mb-6 lg:mb-0">
-                        <div
-                            class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                        <motion.div
+                            class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700"
+                            initial={{ opacity: 0, translateY: "50px" }}
+                            whileInView={{ opacity: 1, translateY: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1 }}
+                        >
                             <div class="relative overflow-hidden bg-cover bg-no-repeat">
                                 <img src="https://mdbcdn.b-cdn.net/img/new/avatars/6.jpg" class="w-full rounded-t-lg" />
                                 <a href="#!">
@@ -73,12 +78,17 @@ export default function Testimonials() {
                                     corrupti.
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
 
                     <div class="mb-6 lg:mb-0">
-                        <div
-                            class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                        <motion.div
+                            class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700"
+                            initial={{ opacity: 0, translateY: "50px" }}
+                            whileInView={{ opacity: 1, translateY: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1 }}
+                        >
                             <div class="relative overflow-hidden bg-cover bg-no-repeat">
                                 <img src="https://mdbcdn.b-cdn.net/img/new/avatars/8.jpg" class="w-full rounded-t-lg" />
                                 <a href="#!">
@@ -134,12 +144,17 @@ export default function Testimonials() {
                                     elementum. Donec a ullamcorper diam.
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
 
                     <div class="">
-                        <div
-                            class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                        <motion.div
+                            class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700"
+                            initial={{ opacity: 0, translateY: "50px" }}
+                            whileInView={{ opacity: 1, translateY: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1 }}
+                        >
                             <div class="relative overflow-hidden bg-cover bg-no-repeat">
                                 <img src="https://mdbcdn.b-cdn.net/img/new/avatars/15.jpg" class="w-full rounded-t-lg" />
                                 <a href="#!">
@@ -195,7 +210,7 @@ export default function Testimonials() {
                                     nostrum minima.
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </section>

@@ -34,6 +34,7 @@ export default function Projects() {
                         whileInView={{ opacity: 1, translateY: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 1 }}
+                        className='rounded-xl overflow-hidden'
                     >
                         <Image
                             src={firstWebsite}
@@ -62,6 +63,7 @@ export default function Projects() {
                         whileInView={{ opacity: 1, translateY: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 1 }}
+                        className='rounded-xl overflow-hidden'
                     >
 
                         <Image
@@ -91,6 +93,7 @@ export default function Projects() {
                         whileInView={{ opacity: 1, translateY: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 1 }}
+                        className='rounded-xl overflow-hidden'
                     >
 
                         <Image
@@ -120,6 +123,7 @@ export default function Projects() {
                         whileInView={{ opacity: 1, translateY: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 1 }}
+                        className='rounded-xl overflow-hidden'
                     >
 
                         <Image
